@@ -9,3 +9,6 @@ version=$(docker run --rm -it nishkarr/asperatransferd /usr/local/asperatransfer
 docker image tag nishkarr/asperatransferd nishkarr/asperatransferd:$version
 
 echo "Tagged nishkarr/asperatransferd:$version"
+echo "Pushing nishkarr/asperatransferd:$version"
+
+docker push nishkarr/asperatransferd:$version
